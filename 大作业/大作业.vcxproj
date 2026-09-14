@@ -70,12 +70,17 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +95,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +109,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +125,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,43 +134,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="C:\Users\bingmc\Downloads\BankSystem\BankSystem.exe" />
-    <None Include="C:\Users\bingmc\Downloads\BankSystem\README.md" />
+    <None Include="README.md" />
+    <None Include="data\.gitkeep" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Account.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\AccountManager.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Admin.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\BankTeller.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\CreditAccount.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Customer.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Employee.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\FileUtils.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\FixedDepositAccount.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\main.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\SavingsAccount.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\SystemMenu.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Transaction.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\TransactionManager.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\User.cpp" />
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\UserManager.cpp" />
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="AccountManager.cpp" />
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="BankTeller.cpp" />
+    <ClCompile Include="CreditAccount.cpp" />
+    <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="FileUtils.cpp" />
+    <ClCompile Include="FixedDepositAccount.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SavingsAccount.cpp" />
+    <ClCompile Include="SystemMenu.cpp" />
+    <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="TransactionManager.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Account.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\AccountManager.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Admin.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\BankTeller.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\CreditAccount.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Customer.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Employee.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\FileUtils.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\FixedDepositAccount.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\SavingsAccount.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\SystemMenu.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Transaction.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\TransactionManager.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\User.h" />
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\UserManager.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="AccountManager.h" />
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="BankTeller.h" />
+    <ClInclude Include="CreditAccount.h" />
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="FileUtils.h" />
+    <ClInclude Include="FixedDepositAccount.h" />
+    <ClInclude Include="SavingsAccount.h" />
+    <ClInclude Include="SystemMenu.h" />
+    <ClInclude Include="Transaction.h" />
+    <ClInclude Include="TransactionManager.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,103 +15,103 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\bingmc\Downloads\BankSystem\BankSystem.exe" />
-    <None Include="C:\Users\bingmc\Downloads\BankSystem\README.md" />
+    <None Include="README.md" />
+    <None Include="data\.gitkeep" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\FileUtils.cpp">
+    <ClCompile Include="FileUtils.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\UserManager.cpp">
+    <ClCompile Include="UserManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\User.cpp">
+    <ClCompile Include="User.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\SystemMenu.cpp">
+    <ClCompile Include="SystemMenu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\TransactionManager.cpp">
+    <ClCompile Include="TransactionManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\AccountManager.cpp">
+    <ClCompile Include="AccountManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Transaction.cpp">
+    <ClCompile Include="Transaction.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\FixedDepositAccount.cpp">
+    <ClCompile Include="FixedDepositAccount.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\CreditAccount.cpp">
+    <ClCompile Include="CreditAccount.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\SavingsAccount.cpp">
+    <ClCompile Include="SavingsAccount.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Account.cpp">
+    <ClCompile Include="Account.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Admin.cpp">
+    <ClCompile Include="Admin.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\BankTeller.cpp">
+    <ClCompile Include="BankTeller.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Employee.cpp">
+    <ClCompile Include="Employee.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\bingmc\Downloads\BankSystem\Customer.cpp">
+    <ClCompile Include="Customer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\User.h">
+    <ClInclude Include="User.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\SystemMenu.h">
+    <ClInclude Include="SystemMenu.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\UserManager.h">
+    <ClInclude Include="UserManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\TransactionManager.h">
+    <ClInclude Include="TransactionManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\AccountManager.h">
+    <ClInclude Include="AccountManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Transaction.h">
+    <ClInclude Include="Transaction.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\FixedDepositAccount.h">
+    <ClInclude Include="FixedDepositAccount.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\CreditAccount.h">
+    <ClInclude Include="CreditAccount.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\SavingsAccount.h">
+    <ClInclude Include="SavingsAccount.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Account.h">
+    <ClInclude Include="Account.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Admin.h">
+    <ClInclude Include="Admin.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\BankTeller.h">
+    <ClInclude Include="BankTeller.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Employee.h">
+    <ClInclude Include="Employee.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\Customer.h">
+    <ClInclude Include="Customer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bingmc\Downloads\BankSystem\FileUtils.h">
+    <ClInclude Include="FileUtils.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

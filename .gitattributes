@@ -3,6 +3,15 @@
 ###############################################################################
 * text=auto
 
+# Keep portable source files in UTF-8 with consistent line endings.
+*.c      text eol=lf
+*.cc     text eol=lf
+*.cpp    text eol=lf
+*.h      text eol=lf
+*.hpp    text eol=lf
+CMakeLists.txt text eol=lf
+*.md     text eol=lf
+
 ###############################################################################
 # Set default behavior for command prompt diff.
 #

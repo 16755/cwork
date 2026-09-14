@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Native C/C++ build artifacts (including manually built program files)
+*.exe
+*.dll
+*.lib
+*.exp
+*.dSYM/
+build/
+cmake-build-*/
+
+# The application creates its own local runtime data. Do not share real
+# accounts, passwords, or transaction history through the repository.
+大作业/data/*
+!大作业/data/.gitkeep

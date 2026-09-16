@@ -217,26 +217,92 @@ void SystemMenu::handleAdminMenu() {
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         switch (choice) {
+        case 1: {
+            // 用户管理
+            std::cout << "\n--- 用户列表 ---" << std::endl;
+            for (auto user : UserManager::getInstance()->getAllUsers()) {
+                std::cout << "  " << user->getUsername() << " ("
+                    << user->getRoleName() << ") 注册于 "
+                    << user->getCreateTime() << std::endl;
+            }
+            std::cout << "===============================" << std::endl;
+            std::cout << "  1.新增用户" << std::endl;
+            std::cout << "  2.删除用户" << std::endl;
+            std::cout << "  0.退出" << std::endl;
+            int choice2;
+            std::cin >> choice2;
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            switch (choice2) {
             case 1: {
-                // 用户管理
-                std::cout << "\n--- 用户列表 ---" << std::endl;
-                for (auto user : UserManager::getInstance()->getAllUsers()) {
-                    std::cout << "  " << user->getUsername() << " ("
-                              << user->getRoleName() << ") 注册于 "
-                              << user->getCreateTime() << std::endl;
+                std::cout << "--请选择新增的用户为---" << std::endl;
+                std::cout << "  1.新增客户" << std::endl;
+                std::cout << "  2.新增柜员" << std::endl;
+                std::cout << "  3.新增管理员" << std::endl;
+                std::cout << "  0.退出" << std::endl;
+                int choice3;
+                std::cin >> choice3;
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                switch (choice3) {
+                case 1: {
+                    std::string username, password, realName, idCard, phone;
+                    std::cout << "用户名: "; std::cin >> username;
+                    std::cout << "密码: "; std::cin >> password;
+                    std::cout << "真实姓名: "; std::cin >> realName;
+                    std::cout << "身份证号: "; std::cin >> idCard;
+                    std::cout << "手机号: "; std::cin >> phone;
+                    bool s = UserManager::getInstance()->registerCustomer(username, password, realName, idCard, phone);
+                    if (s) { std::cout << "[成功] 注册成功，请登录！" << std::endl; }
+                    else { std::cout << "[失败] 用户名已存在！" << std::endl; }
+                    break;
                 }
-                std::cout << "\n输入要删除的用户名(0返回): ";
+                case 2: {
+                    std::string username, password, realName, employeeId, branch;
+                    std::cout << "用户名: "; std::cin >> username;
+                    std::cout << "密码: "; std::cin >> password;
+                    std::cout << "真实姓名: "; std::cin >> realName;
+                    std::cout << "员工编号: "; std::cin >> employeeId;
+                    std::cout << "网点: "; std::cin >> branch;
+                    bool s = UserManager::getInstance()->registerEmployee(username, password, 2, employeeId,  branch,realName);
+                    if (s) { std::cout << "[成功] 注册成功，请登录！" << std::endl; }
+                    else { std::cout << "[失败] 用户名已存在！" << std::endl; }
+                    break;
+                }
+                case 3: {
+                    std::string username, password, realName, employeeId, branch;
+                    std::cout << "用户名: "; std::cin >> username;
+                    std::cout << "密码: "; std::cin >> password;
+                    std::cout << "真实姓名: "; std::cin >> realName;
+                    std::cout << "员工编号: "; std::cin >> employeeId;
+                    std::cout << "网点: "; std::cin >> branch;
+                    bool s = UserManager::getInstance()->registerEmployee(username, password, 3, employeeId, branch,realName);
+                    if (s) { std::cout << "[成功] 注册成功，请登录！" << std::endl; }
+                    else { std::cout << "[失败] 用户名已存在！" << std::endl; }
+                    break;
+                }
+                case 0:
+                    break;
+                }
+                break;
+            }
+            case 2: {
+                std::cout << "\n输入要删除的用户名: ";
                 std::string username;
                 std::cin >> username;
                 if (username != "0") {
                     if (UserManager::getInstance()->deleteUser(username)) {
                         std::cout << "用户已删除" << std::endl;
-                    } else {
+                    }
+                    else {
                         std::cout << "删除失败" << std::endl;
                     }
                 }
                 break;
             }
+            case 0:
+                break;
+            }
+            break;
+        }
             case 2: {
                 // 账户管理
                 std::cout << "\n--- 所有账户 ---" << std::endl;
